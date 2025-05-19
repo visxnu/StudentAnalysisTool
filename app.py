@@ -42,7 +42,7 @@ prediction = loaded_model.predict(new_data)
 if st.button("Predict"):
     st.write("Predicted Score :",prediction[0])
     if prediction[0] < 50 :
-        st.error("You are Successfully Ummfi")
+        st.error("Unfortunately, you did not meet the required criteria to pass.")
     else:
-        st.success("Raskapettu Monee")
+        st.success("You did well and have passed. Congratulations!")
 
